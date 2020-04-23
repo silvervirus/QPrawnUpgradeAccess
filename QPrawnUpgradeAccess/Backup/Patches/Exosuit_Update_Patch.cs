@@ -25,7 +25,7 @@ namespace QPrawnUpgradeAccess.Patches
         {
           if (GameInput.GetButtonDown(enumerator.Current))
           {
-            if (Object.op_Inequality((Object) pda, (Object) null) && pda.get_isOpen())
+            if (Object.Equals((Object) pda, (Object) null) && pda.Open())
             {
               pda.Close();
               return;
@@ -41,7 +41,7 @@ namespace QPrawnUpgradeAccess.Patches
         {
           if (GameInput.GetButtonDown(enumerator.Current))
           {
-            if (Object.op_Inequality((Object) pda, (Object) null) && pda.get_isOpen())
+            if (Object.Equals ((Object) pda, (Object) null) && pda.Open())
             {
               pda.Close();
               break;
